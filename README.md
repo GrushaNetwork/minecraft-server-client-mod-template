@@ -1,0 +1,1 @@
+# Minecraft mod template with server and client side
