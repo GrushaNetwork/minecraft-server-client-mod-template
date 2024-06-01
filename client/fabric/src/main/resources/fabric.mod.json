@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "${modId}",
+	"version": "${version}",
+	"name": "${name}",
+	"description": "${modDescription}",
+	"authors": [
+		"${modAuthors}"
+	],
+	"license": "${modLicense}",
+	"icon": "assets/${modId}/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [],
+		"client": [
+			"me.template.client.fabric.Main"
+		]
+	},
+	"mixins": [
+		"common.mixins.json",
+		"fabric.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=${fabricLoaderVersion}",
+		"fabric-api": ">=${fabricApiVersion}",
+		"minecraft": "~${minecraftVersion}",
+		"java": ">=${targetJavaVersion}"
+	}
+}
